@@ -25,9 +25,7 @@
     <script src="js/modernizr.custom.32033.js"></script>
 	 <script src="js/angularjs/1.3.16/angular.min.js"></script>
 	 <script src="js/angularjs/ngTimeago.js"></script>
-	<script>
-	var app = angular.module('myApp', ['ngTimeago']);
-	</script>
+
 
     <!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
 
@@ -352,11 +350,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-push-2 clearfix">
-                        <div class="section-heading scrollpoint sp-effect3" ng-app="timeagoApp">
+                        <div class="section-heading scrollpoint sp-effect3" ng-app="app2">
                             <h1>.profil<span>e</span>
                             </h1>
                             <h4>
-							<p > Date: {{ '2012-04-01' | timeago }} <br></p>
+							<p > Date: {{ 2012-04-01 | timeago }} <br></p>
+							
+							With over a decade of designing and delivering web applications, I have been a developer, evangelist, architect, product manager, scrum master,
+								pre-sales lead, program manager with equal passion and aplomb.</h4>
+                            <span class="divider"></span>
+                        </div>
+						<div class="section-heading scrollpoint sp-effect3" ng-app="app1">
+                            <h1>.profil<span>e</span>
+                            </h1>
+                            <h4>
+							<p > Date: {{ 2012-04-01 | timeago }} <br></p>
 							
 							With over a decade of designing and delivering web applications, I have been a developer, evangelist, architect, product manager, scrum master,
 								pre-sales lead, program manager with equal passion and aplomb.</h4>
@@ -1114,6 +1122,9 @@
         appMaster.canvasHack();
     });
     </script>
+	<script>
+		var app2 = angular.module('app1', ['ngTimeago']);
+	</script>
 
 </body>
 
