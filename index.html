@@ -26,7 +26,9 @@
 	 <script src="js/angularjs/1.3.16/angular.min.js"></script>
 	 <script src="js/angularjs/ngTimeago.js"></script>
 
-
+	<script>
+		var myapp = angular.module('timeagoApp', ['ngtimeago']);
+	</script>
     <!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -350,23 +352,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-push-2 clearfix">
-                        <div class="section-heading scrollpoint sp-effect3" ng-app="app2">
+                        <div class="section-heading scrollpoint sp-effect3" ng-app="timeagoApp">
                             <h1>.profil<span>e</span>
                             </h1>
                             <h4>
-							<p > Date: {{ 2012-04-01 | timeago }} <br></p>
-							
-							With over a decade of designing and delivering web applications, I have been a developer, evangelist, architect, product manager, scrum master,
-								pre-sales lead, program manager with equal passion and aplomb.</h4>
-                            <span class="divider"></span>
-                        </div>
-						<div class="section-heading scrollpoint sp-effect3" ng-app="app1">
-                            <h1>.profil<span>e</span>
-                            </h1>
-                            <h4>
-							<p > Date: {{ 2012-04-01 | timeago }} <br></p>
-							
-							With over a decade of designing and delivering web applications, I have been a developer, evangelist, architect, product manager, scrum master,
+						<!--	<p > Building applications since {{ '09/07/2001' | timeago }} <br></p> -->
+							<p>
+                            <timer interval="1000" />
+							<timer interval="1000">xxx{{hhours}} hour{{hhoursS}}, {{mminutes}} minute{{minutesS}}, {{sseconds}} second{{secondsS}}.</timer>
+							</p>
+							With well over a decade of designing and delivering web applications, I have been a developer, evangelist, architect, product manager, scrum master,
 								pre-sales lead, program manager with equal passion and aplomb.</h4>
                             <span class="divider"></span>
                         </div>
@@ -380,7 +375,7 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="media vertical scrollpoint sp-effect5">
-                                    <a href="#">
+                                     <a href="#" onclick="return false">
                                         <i class="media-object fa fa-university fa-2x"></i>
                                     </a>
                                     <div class="media-body">
@@ -391,7 +386,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="media vertical scrollpoint sp-effect5">
-                                    <a href="#">
+                                    <a href="#" onclick="return false">
                                         <i class="media-object fa fa-user fa-2x"></i>
                                     </a>
                                     <div class="media-body">
@@ -402,7 +397,7 @@
                             </div>
 							<div class="col-md-3">
                                 <div class="media vertical scrollpoint sp-effect5">
-                                    <a href="#">
+                                    <a href="#" onclick="return false">
                                         <i class="media-object fa fa-square fa-2x"></i>
                                     </a>
                                     <div class="media-body">
@@ -413,12 +408,13 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="media vertical scrollpoint sp-effect5">
-                                    <a href="#">
+                                    <a href="#" onclick="return false">
                                         <i class="media-object fa fa-umbrella fa-2x"></i>
                                     </a>
                                     <div class="media-body">
-                                        <h4 class="media-heading">Movie Buff and Google Fan</h4>
-                                        <p>I know that doesn't qualify as a skill, but I love watching movies and love to 'Google' Google.  </p>
+                                        <h4 class="media-heading">And more..</h4>
+                                        <p>I enjoy embracing new skills and hence have been a cartoonist, doodler, logo designer, a wedding photographer, event organizer, 
+                                        Photoshopper, video editor.. but (sadly) never got paid for any of it.  </p>
                                     </div>
                                 </div>
                             </div>
@@ -1105,7 +1101,7 @@
 
     <script src="js/waypoints.min.js"></script>
 
-    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsqP8Kt1oS2W5-wSyVWvUEYzJw9tsX5r4&sensor=false"></script> 
     <script src="js/script.js"></script>
 
     <script>
