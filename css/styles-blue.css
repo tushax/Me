@@ -1068,6 +1068,7 @@ footer#site-footer a img.top {
 .section-heading h1, .section-heading h2, .section-heading h3 {
   text-transform: uppercase;
   font-weight: bold;
+  color:red;
 }
 .section-heading h1 span, .section-heading h2 span, .section-heading h3 span {
   color: #22a3df;
@@ -1086,7 +1087,10 @@ footer#site-footer a img.top {
 .section-heading.white {
   color: white;
 }
-
+.section-heading h5 {
+  color: red;
+text-transform: lowercase;
+}
 span.brandy {
   color: #22a3df;
   text-transform: lowercase;
