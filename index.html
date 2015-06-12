@@ -38,6 +38,16 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	    <!-- compiled JavaScript -->
+    <!-- <script type="text/javascript" src="bower_components/angular/angular.min.js"></script> -->
+    <script type="text/javascript" src="app/js/_timer.js"></script>
+    <script type="text/javascript" src="app/js/i18nService.js"></script>
+    <script type="text/javascript" src="app/js/progressBarService.js"></script>
+    <script type="text/javascript" src="bower_components/momentjs/min/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="bower_components/humanize-duration/humanize-duration.js"></script>
+    <script type="text/javascript" src="docs/docs.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
+	
 </head>
 
 <body>
@@ -355,12 +365,12 @@
                         <div class="section-heading scrollpoint sp-effect3" ng-app="timeagoApp">
                             <h1>.profil<span>e</span>
                             </h1>
-                            <h4>
+                            <h4 id="timeSpentWorking" ng-app="timer-demo" ng-controller="TimerDemoController">
 						<!--	<p > Building applications since {{ '09/07/2001' | timeago }} <br></p> -->
-							<p>
-                            <timer interval="1000" />
-							<timer interval="1000">xxx{{hhours}} hour{{hhoursS}}, {{mminutes}} minute{{minutesS}}, {{sseconds}} second{{secondsS}}.</timer>
-							</p>
+							<p >
+                            
+							<timer start-time="994673222222" >Working since {{days}} days, {{hhours}} hour{{hhoursS}}, {{mminutes}} minute{{minutesS}}, {{sseconds}} second{{secondsS}} (14yrs approx)</timer>
+							</p></h4>
 							With well over a decade of designing and delivering web applications, I have been a developer, evangelist, architect, product manager, scrum master,
 								pre-sales lead, program manager with equal passion and aplomb.</h4>
                             <span class="divider"></span>
@@ -1118,10 +1128,10 @@
         appMaster.canvasHack();
     });
     </script>
-	<script>
-		var app2 = angular.module('app1', ['ngTimeago']);
-	</script>
 
+<script>
+angular.bootstrap(document.getElementById("timeSpentWorking"),['timer-demo']);
+</script>
 </body>
 
 </html>
