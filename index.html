@@ -364,11 +364,12 @@
                     <div class="col-md-8 col-md-push-2 clearfix">
                         <div class="section-heading scrollpoint sp-effect3" ng-app="timeagoApp">
                             <h1>.profil<span>e</span>
-                            </h1>Working since
-                            <h3 id="timeSpentWorking" class="section-heading" ng-app="timer-demo" ng-controller="TimerDemoController" >
+                            </h1>
+                            Career active since: 
+                            <span id="timeSpentWorking"  ng-app="timer-demo" ng-controller="TimerDemoController" >
+    							<timer start-time="994673222222" > {{ddays}} days, {{hhours}} hour{{hhoursS}}, {{mminutes}} minute{{minutesS}}, {{sseconds}} second{{secondsS}} </timer>
+                            </span>
 							
-							<timer start-time="994673222222" > {{ddays}} days, {{hhours}} hour{{hhoursS}}, {{mminutes}} minute{{minutesS}}, {{sseconds}} second{{secondsS}} </timer>
-							</h3>
 							
 							<h5 >
 							With well over a decade of designing and delivering web applications, I have been a developer, evangelist, architect, product manager, scrum master,
