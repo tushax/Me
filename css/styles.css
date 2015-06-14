@@ -301,6 +301,17 @@ section#services .media-services.right:hover:before {
 }
 section#testimonials {
   padding: 40px 0;
+  background-color:#000000;
+}
+
+p#testimonials {
+    color:#ffffff;
+}
+h3#testimonials {
+    color:#cccccc;
+}
+h4#testimonials {
+    color:#63bffb;
 }
 section#testimonials #testimonials-carousel {
   margin: 30px 0;
@@ -340,7 +351,7 @@ section#testimonials #testimonials-carousel .carousel-control {
   color: #bfbfbf;
 }
 section#buyNow {
-  background-image: url(../img/samples/bk-bl.jpg);
+  background-image: url(../img/samples/bk-sea.jpg);
   background-attachment: fixed;
   padding: 65px 0;
 }
@@ -554,7 +565,7 @@ section#skills .skill-detail {
   display: block;
 }
 section#twitter {
-  background-image: url(../img/samples/bk-social.jpg);
+  background-image: url(../img/samples/bk-socialNew.jpg);
   background-attachment: fixed;
   padding: 40px 0;
   position: relative;
