@@ -352,8 +352,10 @@ section#testimonials #testimonials-carousel .carousel-control {
 }
 section#skillCloud {
   background-image: url(../img/samples/clouds.jpg);
-   background-repeat: no-repeat;
-  padding: 65px 0;
+   background-repeat: repeat-y;
+  padding: 0 0 0 0 ;
+  text-align:center;
+  align-content:center;
 }
 section#buyNow {
   background-image: url(../img/samples/bk-sea.jpg);
