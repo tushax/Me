@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400,600,700);
-.backgroundCover, section#features, section#buyNow, section#twitter, section.well {
+.backgroundCover, section#features, section#buyNow, section#skillcloud, section#twitter, section.well {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -349,6 +349,11 @@ section#testimonials #testimonials-carousel .carousel-control {
   background: none;
   width: 30px;
   color: #bfbfbf;
+}
+section#skillCloud {
+  background-image: url(../img/samples/clouds.jpg);
+   background-repeat: no-repeat;
+  padding: 65px 0;
 }
 section#buyNow {
   background-image: url(../img/samples/bk-sea.jpg);
